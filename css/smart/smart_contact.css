@@ -1,0 +1,84 @@
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 30%;
+}
+
+main>* {
+  width: 90%;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+
+  color: rgb(251, 24, 38);
+  font-family: Satisfy;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+
+/*------------news------------------*/
+.contact_upper_box{
+  font-family: "Kosugi", sans-serif;
+}
+.contact_upper {
+  font-size: 0.9rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.call_number {
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+form {
+  background-color: #f7e9d1;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: "Kosugi", sans-serif;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 9px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border: 1px solid;
+  background-color: white;
+}
+
+form input[type="submit"] {
+  background-color: rgb(251, 24, 38);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: rgb(226, 21, 21);
+}
+
+.contact_form {
+  display: flex;
+  justify-content: center;
+}
+
+#message {
+  height: 6rem;
+}

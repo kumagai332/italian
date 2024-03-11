@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 10%;
+}
+
+main>* {
+  width: 100%;
+}
+
+
+
+h2 {
+  display: flex;
+  justify-content: center;
+
+  color: rgb(251, 24, 38);
+  font-family: Satisfy;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-top: 6%;
+}
+
+.h3 {
+  width: 68%;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 5%;
+  padding-top: 6%;
+}
+
+.h3 h3 {
+  color: rgb(0, 0, 0);
+  font-family: Satisfy;
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+table {
+  border-spacing: 6rem;
+  text-align: left;
+}
+
+/*--------------contents-------------------*/
+/*--------------piza-------------------*/
+.img_01 img {
+  width: 24rem;
+  padding-bottom: 5%;
+}
+
+.img_02 img {
+  width: 24rem;
+}
+
+.piza_menu_contents {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.piza_menu_contents table {
+  width: 40%;
+}
+
+.piza_menu_contents tr :nth-child(1) {
+  font-size: 0.9rem;
+}
+
+
+/*--------------pasta-------------------*/
+.pasta_menu_contents {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.pasta_menu_contents table {
+  width: 40%;
+}
+
+.pasta_menu_contents td {
+  font-size: 0.9rem;
+}
+
+.pasta_menu_contents img {
+  width: 24rem;
+}
+
+/*--------------dezzart-------------------*/
+
+.dezzart_menu_contents {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.dezzart_menu_contents table {
+  width: 40%;
+}
+
+.dezzart_menu_contents td {
+  font-size: 0.9rem;
+}
+
+.dezzart_menu_contents tr :nth-child(2) {
+  width:17%;
+}
+
+.dezzart_menu_contents img {
+  width: 24rem;
+}
+
+/*--------------drink-------------------*/
+.drink_menu_contents {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.drink_menu_contents table {
+  width: 40%;
+}
+
+.drink_menu_contents td {
+  font-size: 0.9rem;
+}
+
+.drink_menu_contents tr :nth-child(2) {
+  width: 16%;
+}
+
+.drink_menu_contents img {
+  width: 24rem;
+}

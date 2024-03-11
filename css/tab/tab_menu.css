@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 10%;
+}
+
+main>* {
+  width: 100%;
+}
+
+
+
+h2 {
+  display: flex;
+  justify-content: center;
+
+  color: rgb(251, 24, 38);
+  font-family: Satisfy;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.h3 {
+  width: 88%;
+}
+
+.h3 h3 {
+  color: rgb(0, 0, 0);
+  font-family: Satisfy;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-bottom: 5%;
+  padding-top: 6%;
+  margin-right: 70%;
+}
+
+table {
+  border-spacing: 6rem;
+  text-align: left;
+  font-family: "Kosugi", sans-serif;
+}
+
+
+/*--------------contents-------------------*/
+/*--------------piza-------------------*/
+.img_01 img {
+  width: 21rem;
+  padding-bottom: 5%;
+}
+
+.img_02 img {
+  width: 21rem;
+}
+
+.piza_menu_contents {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.piza_menu_contents table {
+  width: 100%;
+}
+
+.piza_menu_contents tr :nth-child(1) {
+  font-size: 0.9rem;
+}
+
+
+/*--------------pasta-------------------*/
+.pasta_menu_contents {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.pasta_menu_contents table {
+  width: 100%;
+}
+
+.pasta_menu_contents td {
+  font-size: 0.9rem;
+}
+
+.pasta_menu_contents img {
+  width: 21rem;
+}
+
+/*--------------dezzart-------------------*/
+
+.dezzart_menu_contents {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.dezzart_menu_contents table {
+  width: 100%;
+}
+
+.dezzart_menu_contents td {
+  font-size: 0.9rem;
+}
+
+.dezzart_menu_contents tr :nth-child(2) {
+  width:17%;
+}
+
+.dezzart_menu_contents img {
+  width: 21rem;
+}
+
+/*--------------drink-------------------*/
+.drink_menu_contents {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.drink_menu_contents table {
+  width: 100%;
+}
+
+.drink_menu_contents td {
+  font-size: 0.9rem;
+}
+
+.drink_menu_contents tr :nth-child(2) {
+  width: 16%;
+}
+
+.drink_menu_contents img {
+  width: 21rem;
+}

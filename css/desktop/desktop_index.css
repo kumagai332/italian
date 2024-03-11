@@ -1,0 +1,309 @@
+/*--------------全体------------------*/
+
+
+section {
+  box-sizing: border-box;
+  padding-bottom: 8%;
+  padding-top: 8%;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+
+  color: rgb(251, 24, 38);
+  font-family: Satisfy;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+
+
+
+#catchUp h1 {
+  color: rgb(242 6 21 / 73%);
+    font-family: "Marck Script", cursive;
+    font-size: 3.3rem;
+    font-weight: 400;
+    line-height: 52px;
+    letter-spacing: 0%;
+    position: absolute;
+    top: 26%;
+    left: 57%;
+    width: 20%;
+}
+
+/*---------------------link-----------------------------*/
+/*
+.anchor-1{
+  padding-top: 100px;
+  margin-top: 100px;
+  height: 120px;
+}
+
+.anchor-2{
+  padding-top: 100px;
+  margin-top: 100px;
+  height: 160px;
+}
+*/
+/*--------------キャッチアップ------------------*/
+#catchUp {
+  display: flex;
+  justify-content: center;
+}
+
+#catchUp img {
+  display: flex;
+  justify-content: center;
+  height: 29rem;
+  object-fit: cover;
+  object-position: center bottom;
+  width: 90%;
+  /* 画像の上部を表示します */
+}
+
+/*
+.footer { background-color: #f8f9fa; padding: 20px; text-align: center; }
+.info {
+    margin-bottom: 20px;
+}
+.title {
+    color: #accc66;
+    font-weight: bold;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #accc66;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+*/
+
+
+/*--------------concept------------------*/
+#concept {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#concept p {
+  width: 54%;
+  line-height: 148.3%;
+  font-family: "Kosugi", sans-serif;
+  font-size: 1rem;
+}
+
+.concept_text {
+  display: flex;
+  justify-content: center;
+}
+
+/*--------------menu------------------*/
+
+.middle_title_box{
+  width: 100%;
+}
+
+.middle_title{
+  display: flex;
+  justify-content: center;
+}
+
+.middle_title h3 {
+  color: rgb(0, 0, 0);
+  font-family: Oregano;
+  font-size: 3rem;
+  line-height: 5rem;
+  text-align: left;
+  padding-bottom: 5%;
+  width: 80%; /* 幅を自動に設定 */
+}
+
+
+.menu-grid_container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 22.5rem 24.1rem;;
+  grid-template-rows: 28rem 28rem;
+}
+
+
+.menu-grid_container h2 {
+  display: block;
+}
+
+
+.pizza_menu {
+  width: 22.9rem;
+}
+
+.pizza_menu p {
+  padding-top: 7%;
+  font-family: "Kosugi", sans-serif;
+}
+
+.pasta_menu {
+  padding-left: 7%;
+}
+
+.pasta_menu p {
+  width: 22rem;
+  padding-top: 10%;
+  font-family: "Kosugi", sans-serif;
+}
+
+.dezzart_menu img{
+  width: 22.6rem;
+  height: 15rem;
+}
+
+.dezzart_menu p{
+  font-family: "Kosugi", sans-serif;
+  padding-top: 10%;
+}
+
+.drink_menu{
+  padding-left: 7%;
+}
+
+.drink_menu img{
+  width: 22.6rem;
+}
+
+.drink_menu p{
+  font-family: "Kosugi", sans-serif;
+  padding-top: 10%;
+}
+
+/*--------------news------------------*/
+
+#news_box {
+  display: flex;
+  justify-content: center;
+  font-family: "Kosugi", sans-serif;
+}
+
+.en {
+  color: rgb(176, 12, 12);
+  font-size: 0.8rem;
+
+}
+
+.fadein {
+  line-height: 176.3%;
+}
+
+
+.article_box a {
+  transition: all 0.3s;
+}
+
+.article_box a:hover {
+  opacity: 0.3;
+}
+
+/*--------------menu-news------------------*/
+.conductor_wire {
+  text-align: right;
+  display: block;
+  font-size: 2.6rem;
+  padding-top: 4%;
+  font-family: Satisfy;
+  width: 86%;
+}
+
+
+.conductor_wire a {
+  transition: all 0.3s;
+  color: rgb(26, 115, 232);
+}
+
+.conductor_wire a:hover {
+  opacity: 0.3;
+}
+
+.more {
+  position: relative;
+  padding-right: 3.2rem;
+  line-height: 1;
+}
+
+
+.more::after {
+  content: '>';
+  /*絶対配置で矢印の位置を決める*/
+  position: absolute;
+  top: 22%;
+  right: 15%;
+  transition: all .3s;
+}
+
+
+.more:hover::after {
+  right: 7%;
+}
+
+/*--------------access------------------*/
+
+
+.access_frame {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+
+.access_frame table tr th {
+  text-align: left;
+  width: 35%;
+  vertical-align: top;
+  padding: 0.5rem 0;
+  font-family: "Kosugi", sans-serif;
+}
+
+.access_frame td {
+  padding: 0.5rem;
+  width: 40rem;
+  line-height: 2rem;
+  font-family: "Kosugi", sans-serif;
+}
+
+.access_frame br {
+  padding-bottom: 0.5rem;
+}
+
+#gmap{
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  width: 80%;
+  aspect-ratio: 16/9;
+  /*アスペクト比（縦横比）を指定*/
+}
+
+/*-------------footer----------------*/
+
+/*
+ .back-to-top {
+  position: fixed;
+    bottom: 31%;
+    right: 5%;
+    background-color: #eb3f0e;
+    color: white;
+    padding: 1.1%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+*/

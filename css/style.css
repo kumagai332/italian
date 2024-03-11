@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdf5ed;
+}
+
+#header.fixed {
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  /* ????? */
+  top: 0;
+  left: 0;
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+#wrapper {
+  width: 100%;
+  position: relative;
+  min-height: 100%;
+}
+
+p{
+  font-family: "Kosugi", sans-serif;
+}

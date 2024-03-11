@@ -1,0 +1,256 @@
+/*--------------全体------------------*/
+
+
+
+section {
+  box-sizing: border-box;
+  padding-bottom: 8%;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+
+  color: rgb(251, 24, 38);
+  font-family: Satisfy;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-top: 13%;
+  padding-bottom: 13%;
+}
+
+
+h3 {
+  color: rgb(0, 0, 0);
+  font-family: Oregano;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 0%;
+  text-align: right;
+  padding-bottom: 5%;
+}
+
+#catchUp h1 {
+  color: rgb(242 6 21 / 73%);
+  font-family: "Marck Script", cursive;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 0%;
+  position: absolute;
+  top: 53%;
+  left: 57%;
+  width: 29%;
+}
+
+
+
+/*--------------キャッチアップ------------------*/
+#catchUp {
+  display: flex;
+  justify-content: center;
+}
+
+#catchUp img {
+    height: 29rem;
+    object-fit: cover;
+    object-position: center bottom;
+    width: 90%;
+  /* 画像の上部を表示します */
+}
+
+
+/*--------------concept------------------*/
+#concept {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#concept p {
+  width: 67%;
+  line-height: 148.3%;
+  font-family: "Kosugi", sans-serif;
+}
+
+.concept_text {
+  display: flex;
+  justify-content: center;
+}
+
+/*--------------menu------------------*/
+
+.middle_title{
+  width: 24%;
+}
+
+.menu-grid_container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 18rem 18.1rem;;
+  grid-template-rows: 28rem 28rem;
+}
+
+
+.menu-grid_container h2 {
+  display: block;
+}
+
+
+
+.pizza_menu img {
+  width: 18rem;
+}
+
+.pizza_menu p {
+  padding-top: 10%;
+  width: 18rem;
+}
+
+.pasta_menu {
+  padding-left: 7%;
+}
+
+.pasta_menu img {
+  width: 18rem;
+}
+
+.pasta_menu p {
+  width: 18rem;
+  padding-top: 10%;
+}
+
+
+.dezzart_menu img{
+  width: 18rem;
+  height: 15rem;
+}
+
+.dezzart_menu p{
+  font-family: "Kosugi", sans-serif;
+  padding-top: 10%;
+  width: 18rem;
+}
+
+.drink_menu{
+  padding-left: 7%;
+}
+
+.drink_menu img{
+  width: 18rem;
+}
+
+.drink_menu p{
+  font-family: "Kosugi", sans-serif;
+  padding-top: 10%;
+  width: 18rem;
+}
+
+
+/*--------------news------------------*/
+#news_box{
+  display: flex;
+    justify-content: center;
+}
+
+.en {
+  color: rgb(176, 12, 12);
+  font-size: 0.8rem;
+
+}
+
+.fadein {
+  line-height: 176.3%;
+}
+
+.article_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Kosugi", sans-serif;
+}
+
+.article_box a {
+  transition: all 0.3s;
+}
+
+.article_box a:hover {
+  opacity: 0.3;
+}
+
+/*--------------menu-news------------------*/
+.conductor_wire {
+  text-align: right;
+  display: block;
+  font-size: 2.6rem;
+  padding-top: 4%;
+  font-family: Satisfy;
+  width: 86%;
+}
+
+
+.conductor_wire a {
+  transition: all 0.3s;
+  color: rgb(26, 115, 232);
+}
+
+.conductor_wire a:hover {
+  opacity: 0.3;
+}
+
+.more {
+  position: relative;
+  padding-right: 3.2rem;
+  line-height: 1
+}
+
+
+.more::after {
+  content: '>';
+  /*絶対配置で矢印の位置を決める*/
+  position: absolute;
+  top: 22%;
+  right: 15%;
+  transition: all .3s;
+}
+
+
+.more:hover::after {
+  right: 7%;
+}
+
+/*--------------access------------------*/
+.access_frame {
+  display: flex;
+  justify-content: center;
+  font-family: "Kosugi", sans-serif;
+}
+
+.access_frame table tr th {
+  text-align: left;
+  width: 35%;
+  vertical-align: top;
+  padding: 0.5rem 0;
+}
+
+.access_frame td {
+  padding: 0.5rem;
+  width: 40rem;
+  line-height: 2rem;
+}
+
+.access_frame br {
+  padding-bottom: 0.5rem;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  /*アスペクト比（縦横比）を指定*/
+}
+
+/*-------------footer----------------*/
