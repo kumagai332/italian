@@ -1,36 +1,36 @@
-/* //-----------------���[�f�B���O��ʂł�logo�̕\��---------------------------------------------------------------*/
+/* //-----------------ローディング画面でのlogoの表示---------------------------------------------------------------*/
 
 $(document).ready(function () {
-	$("#splash").delay(1500).fadeOut('slow');//���[�f�B���O��ʂ�1.5�b�i1500ms�j�ҋ@���Ă���t�F�[�h�A�E�g
-	$("#splash_logo").delay(1200).fadeOut('slow');//���S��1.2�b�i1200ms�j�ҋ@���Ă���t�F�[�h�A�E�g
+	$("#splash").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+	$("#splash_logo").delay(1200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
 });
 
 $(document).ready(function () {
-	// ���[�J���X�g���[�W��"visited"�Ƃ����L�[�ŃA�N�Z�X�������ǂ�����ۑ�
+	// ローカルストレージに"visited"というキーでアクセスしたかどうかを保存
 	var visited = localStorage.getItem("visited");
 
-	// ����K�⎞�̂݃��[�f�B���O��ʂ�\��
+	// 初回訪問時のみローディング画面を表示
 	if (!visited) {
 		$("#splash").delay(1500).fadeOut('slow');
 		$("#splash_logo").delay(1200).fadeOut('slow');
 
-		// "visited"��true�ɐݒ肵�āA���񂩂�̓��[�f�B���O��ʂ��\������Ȃ��悤�ɂ���
+		// "visited"をtrueに設定して、次回からはローディング画面が表示されないようにする
 		localStorage.setItem("visited", true);
 	} else {
-		// 2��ڈȍ~�̖K��ł̓��[�f�B���O��ʂ�\�����Ȃ�
+		// 2回目以降の訪問ではローディング画面を表示しない
 		$("#splash").hide();
 		$("#splash_logo").hide();
 	}
 });
 
 
-//-----------------��ʏ㕔�Œ�----------------------------------------------------------------------------
+//-----------------画面上部固定----------------------------------------------------------------------------
 
 $(function () {
 	var pos = $("#header").offset().top;
 	var height = $("#header").outerHeight();
 	$(window).on("scroll touchstart touchmove touchend", function () {
-		console.log("Scroll event fired!");  // ���̍s��ǉ�
+		console.log("Scroll event fired!");  // この行を追加
 		if ($(this).scrollTop() > pos) {
 			$("#header").addClass("fixed");
 		} else {
@@ -42,17 +42,17 @@ $(function () {
 
 
 
-//-----------------�����N��Ɉړ�----------------------------------------------------------------------------*/
+//-----------------リンク先に移動----------------------------------------------------------------------------*/
 
 $('#g-navi a[href*="#"]').click(function () {
-	var elmHash = $(this).attr('href'); //�y�[�W�������N��HTML�^�Ohref����A�����N����Ă���G���Aid�̒l���擾
-	var pos = $(elmHash).offset().top;  //id�̏㕔�̋������擾
-	var headerHeight = $('#header').outerHeight(); // �w�b�_�[�̍������擾
-	$('body,html').animate({ scrollTop: pos - headerHeight }, 500); //�擾�����ʒu�ɃX�N���[���i�w�b�_�[�̍����������j�B500�̐��l���傫���Ȃ�قǂ������X�N���[��
+	var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
+	var pos = $(elmHash).offset().top;  //idの上部の距離を取得
+	var headerHeight = $('#header').outerHeight(); // ヘッダーの高さを取得
+	$('body,html').animate({ scrollTop: pos - headerHeight }, 500); //取得した位置にスクロール（ヘッダーの高さを引く）。500の数値が大きくなるほどゆっくりスクロール
 	return false;
 });
 
-//-----------------���y�[�W���烊���N��Ɉړ�----------------------------------------------------------------------------
+//-----------------他ページからリンク先に移動----------------------------------------------------------------------------
 $(document).ready(function () {
 	var url = window.location.href;
 	var id = url.substring(url.indexOf("#") + 1);
@@ -64,45 +64,45 @@ $(document).ready(function () {
 	}
 });
 
-//---------------������X���C�h�C��-------------------------------------------------------------------------------------------------------
+//---------------下からスライドイン-------------------------------------------------------------------------------------------------------
 
-// �����̂��������ƂȂ�A�j���[�V�����̖��O���`
+// 動きのきっかけとなるアニメーションの名前を定義
 function fadeAnime() {
 
-	// �ӂ��
-	$('.fadeUpTrigger').each(function () { //fadeUpTrigger�Ƃ����N���X����
-		var elemPos = $(this).offset().top - 50;//�v�f���A50px���
+	// ふわっ
+	$('.fadeUpTrigger').each(function () { //fadeUpTriggerというクラス名が
+		var elemPos = $(this).offset().top - 50;//要素より、50px上の
 		var scroll = $(window).scrollTop();
 		var windowHeight = $(window).height();
 		if (scroll >= elemPos - windowHeight) {
-			$(this).addClass('fadeUp');// ��ʓ��ɓ�������fadeUp�Ƃ����N���X����ǋL
+			$(this).addClass('fadeUp');// 画面内に入ったらfadeUpというクラス名を追記
 		} else {
-			$(this).removeClass('fadeUp');// ��ʊO�ɏo����fadeUp�Ƃ����N���X�����O��
+			$(this).removeClass('fadeUp');// 画面外に出たらfadeUpというクラス名を外す
 		}
 	});
 }
 
-// ��ʂ��X�N���[���������瓮���������ꍇ�̋L�q
+// 画面をスクロールをしたら動かしたい場合の記述
 $(window).scroll(function () {
-	fadeAnime();/* �A�j���[�V�����p�̊֐����Ă�*/
-});// �����܂ŉ�ʂ��X�N���[���������瓮���������ꍇ�̋L�q
+	fadeAnime();/* アニメーション用の関数を呼ぶ*/
+});// ここまで画面をスクロールをしたら動かしたい場合の記述
 
-// ��ʂ��ǂݍ��܂ꂽ�炷���ɓ����������ꍇ�̋L�q
+// 画面が読み込まれたらすぐに動かしたい場合の記述
 $(window).on('load', function () {
-	fadeAnime();/* �A�j���[�V�����p�̊֐����Ă�*/
-});// �����܂ŉ�ʂ��ǂݍ��܂ꂽ�炷���ɓ����������ꍇ�̋L�q
+	fadeAnime();/* アニメーション用の関数を呼ぶ*/
+});// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
 
 
-//------------�X�}�[�g�t�H���p-------------------------------------------------------------------------------
+//------------スマートフォン用-------------------------------------------------------------------------------
 
-$(".openbtn1").click(function () {//�{�^�����N���b�N���ꂽ��
-	$(this).toggleClass('active');//�{�^�����g�� active�N���X��t�^��
-	$("#g-navi").toggleClass('panelactive');//�i�r�Q�[�V������panelactive�N���X��t�^
+$(".openbtn1").click(function () {//ボタンがクリックされたら
+	$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+	$("#g-navi").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
 });
 
-$("#g-navi a").click(function () {//�i�r�Q�[�V�����̃����N���N���b�N���ꂽ��
-	$(".openbtn1").removeClass('active');//�{�^���� active�N���X��������
-	$("#g-navi").removeClass('panelactive');//�i�r�Q�[�V������panelactive�N���X������
+$("#g-navi a").click(function () {//ナビゲーションのリンクがクリックされたら
+	$(".openbtn1").removeClass('active');//ボタンの activeクラスを除去し
+	$("#g-navi").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
 
 
